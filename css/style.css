@@ -1,0 +1,137 @@
+html {
+  font-family: "Roboto", sans-serif;
+  font-weight: regular;
+  user-select: none;
+}
+
+header {
+  padding-top: 20px;
+  position: relative;
+  margin: auto;
+  text-align: center;
+  max-width: 1140px;
+  margin-bottom: 10px;
+}
+
+.input-section {
+  max-width: 1140px;
+  min-width: 320px;
+  height: 600px;
+  position: relative;
+  margin: auto;
+  text-align: center;
+  background: ffff00;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center;
+  border: 1px solid;
+  background: gray;
+}
+.input-section:hover {
+  cursor: pointer;
+}
+.input-section div h2 {
+  font-size: 100px;
+  font-weight: bolt;
+}
+.input-section div h3 {
+  display: block;
+}
+.input-section input {
+  display: none;
+}
+
+.scale-line-text {
+  font-size: 20px;
+  font-weight: 300;
+  ill: white;
+}
+
+.graphic {
+  display: none;
+  max-width: 1140px;
+  min-width: 320px;
+  min-height: 600px;
+  position: relative;
+  margin: auto;
+  text-align: center;
+  background: ffff00;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center;
+  border: 1px solid;
+  background: gray;
+}
+.graphic__svg {
+  max-width: 1140px;
+  min-width: 320px;
+  min-height: 600px;
+  padding-bottom: 10px;
+}
+.graphic__svg svg circle {
+  stroke-width: 0;
+}
+.graphic__error {
+  font-size: 100px;
+  font-weight: 300;
+  background: #d65858;
+  color: white;
+}
+.graphic__error:hover {
+  cursor: pointer;
+}
+.graphic__legend-block {
+  display: inherit;
+  justify-content: inherit;
+  flex-direction: column;
+}
+.graphic__legend-block h1 {
+  display: inline;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 700;
+}
+.graphic__legend-block h1:hover {
+  cursor: default;
+}
+.graphic__legend-block ul {
+  display: inherit;
+  justify-content: inherit;
+}
+.graphic__legend-block li {
+  display: inherit;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-right: 50px;
+  font-weight: 900;
+  padding: 5px, 5px, 5px, 5px;
+}
+.graphic__legend-block li svg {
+  margin-right: 10px;
+}
+.graphic__legend-block li:last-child {
+  margin-right: 0;
+}
+.graphic__legend-block li:hover {
+  cursor: pointer;
+}
+
+.select {
+  color: black;
+  stroke-opacity: 1;
+  fill-opacity: 1;
+}
+
+.non-select {
+  color: rgba(0, 0, 0, 0.3725490196);
+  stroke-opacity: 0;
+  fill-opacity: 0.25;
+}
+
+#info-window {
+  display: none;
+  font-size: 16px;
+}/*# sourceMappingURL=style.css.map */
