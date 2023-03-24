@@ -1,5 +1,6 @@
 "use strict";
 import {svg, SVG_COLOR} from './create-svg.js';
+import {state} from '../script.js';
 
 function moveInfoWindow(xPoint, yPoint, infoWindow, titleTime, titleValue) {
 	const path = document.getElementById("path-info");
@@ -9,13 +10,13 @@ function moveInfoWindow(xPoint, yPoint, infoWindow, titleTime, titleValue) {
 	let transformX = 1;
 	let transformY = 1
 
-	if (xPoint > 300) {
+	if (xPoint > state.graphSizeX / 2 + 82) {
 		transformX = -1;
 		titleTime.setAttribute("x", "-165");
 		titleValue.setAttribute("x", "-165");
 		xCoordinate += 10;
 	}
-	if (yPoint > 300) {
+	if (yPoint > state.graphSizeY / 2) {
 		transformY = -1;
 		titleTime.setAttribute("y", "-47");
 		titleValue.setAttribute("y", "-27");

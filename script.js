@@ -24,6 +24,7 @@ const graphZone = document.querySelector(".graphic");
 const input = inputZone.querySelector("input");
 const graphArea = document.querySelector(".graphic__svg");
 
+
 inputZone.addEventListener("dragover", (event) => event.preventDefault());
 inputZone.addEventListener("drop", (event) => event.preventDefault());
 
