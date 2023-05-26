@@ -53,6 +53,7 @@ header {
   display: none;
   max-width: 3140px;
   min-width: 340px;
+  min-height: 300px;
   height: 80vh;
   position: relative;
   margin: auto;
