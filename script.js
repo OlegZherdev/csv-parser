@@ -56,12 +56,6 @@ async function compile() {
     createGraph();
 }
 
-
-// function hideInputShowGraph() {
-//     inputZone.style.display = "none";
-//     graphZone.style.display = "flex";
-// }
-
 function showError(errorMessage) {
     graphZone.innerHTML = "";
         const messageHeading = document.createElement('h2');
