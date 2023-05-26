@@ -67,7 +67,7 @@ header {
 }
 .graphic__svg {
   max-width: 3140px;
-  min-width: 601px;
+  min-width: 340px;
 }
 .graphic__svg svg circle {
   stroke-width: 0;

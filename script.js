@@ -54,7 +54,7 @@ async function compile() {
         // showError("Неверный формат файла.")
     // }
     await createLegend();
-    await setMaxScaleValueArray();
+    setMaxScaleValueArray();
     createGraph();
 }
 

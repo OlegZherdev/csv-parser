@@ -60,7 +60,7 @@ function getSizeMainSVG() {
     state.graphHeight = graphArea.clientHeight - ledendBox.clientHeight;
 }
 
-export async function setMaxScaleValueArray() {
+export function setMaxScaleValueArray() {
     state.values.forEach((column, columnNumber) => {
         let maxValue = column.maxValue;
         let maxScaleValue = Math.floor(maxValue);
@@ -85,7 +85,6 @@ export async function setMaxScaleValueArray() {
         if (columnNumber === 0) maxScaleValue = maxScaleValue * -1;
         state.maxScaleValueArray.push(maxScaleValue);
     })
-    return;
 }
 
 export function needReCreate() {
