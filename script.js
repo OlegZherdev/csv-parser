@@ -32,8 +32,7 @@ inputZone.addEventListener("drop", (event) => {
 });
 
 inputZone.addEventListener("click", () => {
-    // input.click();
-    compile(); 
+    input.click();
 });
 
 input.addEventListener("change", () => {
@@ -47,12 +46,12 @@ async function compile() {
     inputZone.style.display = "none";
     graphZone.style.display = "flex";
 
-    // if (REGEX_FILE_TYPE.test(state.file.name)) {
-        // await readFileFromState();
+    if (REGEX_FILE_TYPE.test(state.file.name)) {
+        await readFileFromState();
         await parseCsv();
-    // } else {
-        // showError("Неверный формат файла.")
-    // }
+    } else {
+        showError("Неверный формат файла.")
+    }
     await createLegend();
     setMaxScaleValueArray();
     createGraph();
