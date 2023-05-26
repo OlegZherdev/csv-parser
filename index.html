@@ -28,44 +28,27 @@
     <main>
       <section class="input-section">
         <div>
-          <h3>Для выбора файла кликните по области</h3>
-          <h2>+</h2>
-          <h3>или перетащите сюда его сюда</h3>
+          <h3 class="input-section__header-text">Для выбора файла кликните по области</h3>
+          <h2  class="input-section__header-plus">+</h2>
+          <h3  class="input-section__header-text">или перетащите сюда его сюда</h3>
         </div>
         <input type="file" />
       </section>
       <section class="graphic">
         <div class="graphic__svg">
-          <svg id="main-svg">
-            <g id="static-svg">
-              <line x1="50" x2="50" y1="572" y2="25" stroke="white" stroke-width="2"></line>
-              <line x1="43" x2="1114" y1="565" y2="565" stroke="white" stroke-width="2"></line>
-              <g id="info-window" fill="white" transform="scale(-1, 1)">
-                <path id="path-info" d="M5 0.5V1.5M5 1.5V61.5C5.16667 62.6667 6.1 64.9 8.5 64.5C10.9 64.1 114.833 64.3333 166.5 64.5C167.333 64.6667 169 64.4 169 62C169 59.6 169 33 169 20C169.167 19.1667 168.9 17.5 166.5 17.5C164.1 17.5 62.1667 17.5 11.5 17.5C9.33333 16.8333 5 12.7 5 1.5Z" stroke="black" fill="#494949"/>
-                <g id="info-text">
-                  <text id="time-info" class="point-info" x="15" y="35"></text> 
-                  <text id="value-info" class="point-info" x="15" y="55"></text> 
-                </g>
-            </g>
-          </g>
-          <g id="dinamic-svg">
-          </g>
-          </svg>
         </div>
         <div class="graphic__legend-block">
           <ul id="ul-ledend">
-            <li class="legendItem">
-              <svg class="graphic__pic select">
-                  <circle cx="15" cy="15" r="7"></circle>
-                  <line x1="3" y1="15" x2="27" y2="15" stroke-width="3"></line>
-              </svg>
-              <p class="legendTitle"></p>
-            </li>
           </ul>
         </div>
       </section>
     </main>
     <script src="script.js" type="module"></script>
-    <script src="./modules/create-svg.js" type="module"></script>
+    <script src="./modules/SVGFactory.js" type="module"></script>
+    <script src="./modules/file-handler.js" type="module"></script>
+    <script src="./modules/SVGSettints.js" type="module"></script>
+    <script src="./modules/LegendItem.js" type="module"></script>
+    <script src="./modules/graphCreator.js" type="module"></script>
+
   </body>
 </html>

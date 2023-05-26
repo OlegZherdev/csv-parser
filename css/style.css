@@ -9,14 +9,14 @@ header {
   position: relative;
   margin: auto;
   text-align: center;
-  max-width: 1140px;
+  max-width: 3140px;
   margin-bottom: 10px;
 }
 
 .input-section {
-  max-width: 1140px;
-  min-width: 320px;
-  height: 600px;
+  max-width: 3140px;
+  min-width: 340px;
+  height: 80vh;
   position: relative;
   margin: auto;
   text-align: center;
@@ -31,11 +31,12 @@ header {
 .input-section:hover {
   cursor: pointer;
 }
-.input-section div h2 {
-  font-size: 100px;
+.input-section__header-plus {
+  font-size: 200px;
   font-weight: bolt;
 }
-.input-section div h3 {
+.input-section__header-text {
+  font-size: 50px;
   display: block;
 }
 .input-section input {
@@ -50,9 +51,9 @@ header {
 
 .graphic {
   display: none;
-  max-width: 1140px;
-  min-width: 320px;
-  min-height: 600px;
+  max-width: 3140px;
+  min-width: 340px;
+  height: 80vh;
   position: relative;
   margin: auto;
   text-align: center;
@@ -64,10 +65,8 @@ header {
   background: gray;
 }
 .graphic__svg {
-  max-width: 1140px;
-  min-width: 320px;
-  min-height: 600px;
-  padding-bottom: 10px;
+  max-width: 3140px;
+  min-width: 601px;
 }
 .graphic__svg svg circle {
   stroke-width: 0;
@@ -75,6 +74,7 @@ header {
 .graphic__error {
   font-size: 100px;
   font-weight: 300;
+  height: 80vh;
   background: #d65858;
   color: white;
 }
@@ -86,18 +86,10 @@ header {
   justify-content: inherit;
   flex-direction: column;
 }
-.graphic__legend-block h1 {
-  display: inline;
-  margin-bottom: 10px;
-  font-size: 20px;
-  font-weight: 700;
-}
-.graphic__legend-block h1:hover {
-  cursor: default;
-}
 .graphic__legend-block ul {
   display: inherit;
   justify-content: inherit;
+  padding-top: 10px;
 }
 .graphic__legend-block li {
   display: inherit;
@@ -134,4 +126,58 @@ header {
 #info-window {
   display: none;
   font-size: 16px;
+}
+
+@media (max-width: 1000px) {
+  .input-section__header-plus {
+    font-size: 100px;
+    font-weight: bolt;
+  }
+  .input-section__header-text {
+    font-size: 25px;
+    display: block;
+  }
+  .graphic__legend-block li {
+    margin-right: 20px;
+  }
+}
+#info-window {
+  display: none;
+  font-size: 16px;
+}
+
+@media (max-width: 600px) {
+  header {
+    padding-top: 5px;
+    max-width: 100%;
+    margin-bottom: 5px;
+  }
+  .scale-line-text {
+    font-size: 10px;
+  }
+  .graphic {
+    width: 100%;
+  }
+  .graphic__legend-block ul {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .graphic__legend-block li {
+    flex-direction: column;
+    font-weight: 900;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0 0 5px 0;
+    border: solid;
+    border-width: 3px 0 0 0;
+  }
+  .graphic__legend-block li:last-child {
+    border-width: 3px 0 3px 0;
+  }
+  .graphic__legend-block li svg {
+    margin: 0;
+  }
+  .graphic__legend-block li:hover {
+    cursor: pointer;
+  }
 }/*# sourceMappingURL=style.css.map */
